@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_all.css">
+    <link rel="stylesheet" href="./css/style_reserve.css">
+    <title>鸚鵡茶室_預約</title>
+</head>
+
+<body>
+
+    <!--------------------導覽列---------------------->
+    <div class="nav">
+        <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+        <ul>
+            <li><a href="menu.html">各式菜單</a></li>
+            <li><a href="bird.html">店鳥介紹</a></li>
+            <li><a href="information.html">店家資訊</a></li>
+            <li><a href="reserve.html">線上訂位</a></li>
+        </ul>
+    </div>
+
+    <!------------------------------------------>
+    <div class="main">
+
+        <div class="notice">
+            <h2>訂位須知</h2>
+            <p>
+                為了避免寵物們受到驚嚇、緊迫性而延伸攻擊行為出現，本店限制12歲以下的兒童入內，造成不便請見諒。<br>
+                本店僅採用線上預約制，如需當天來店內，請來電詢問<br>
+                本店最低消費為每人一杯飲品。
+            </p>
+        </div>
+
+
+        <div class="form">
+
+            <!-- 訂位人數與日期 -->
+            <div class="guast_and_day">
+
+                <div class="guest">
+                    <div class="guest_word">
+                        <span>訂位人數</span>
+                    </div>
+                    <select name="people" id="people">
+                        <option value="" selected hidden>請選擇</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <div class="day">
+                    <div class="day_word">
+                        <span>日期</span>
+                    </div>
+                    <input type="date" min="2025-04-02" max="2025-04-09">
+                </div>
+
+            </div>
+
+            <!-- 選擇時段 -->
+            <div class="time">
+                <div class="time_word">
+                    <span>選擇時段</span>
+                </div>
+
+                <div class="time_option_container">
+
+                    <label class="time_option">
+                        <input type="radio" name="time"><span>13：00</span>
+                    </label>
+                    <label class="time_option">
+                        <input type="radio" name="time"><span>14：00</span>
+                    </label>
+                    <label class="time_option">
+                        <input type="radio" name="time"><span>15：00</span>
+                    </label>
+                    <label class="time_option">
+                        <input type="radio" name="time"><span>16：00</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- 訂位者姓名 -->
+            <div class="name">
+                <div class="name_word">
+                    <span>訂位者姓名</span>
+                </div>
+                <input type="text" placeholder="請輸入姓名">
+            </div>
+
+            <!-- 手機與驗證碼 -->
+            <div class="phone_and_verify">
+
+                <div class="phone">
+                    <div class="phone_word">
+                        <span>訂位者手機</span>
+                    </div>
+                    <input type="text" placeholder="請輸入手機號碼">
+
+                    <a href="#">取得驗證碼</a>
+                    <!-- <span>已發送</span> -->
+                </div>
+
+                <div class="verify">
+                    <div class="verify_word">
+                        <span>驗證碼</span>
+                    </div>
+                    <input type="text" placeholder="輸入驗證碼">
+                </div>
+
+            </div>
+
+            <!-- 攜帶寵物 -->
+            <div class="bring_pet">
+                <div class="pet">
+                    <div class="pet_word">
+                        <span>是否有攜帶寵物</span>
+                    </div>
+
+                    <div class="option_container">
+                        <label class="pet_option">
+                            <input type="radio" name="pet"><span>是</span>
+                        </label>
+                        <label class="pet_option">
+                            <input type="radio" name="pet"><span>否</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="pet_type">
+                    <div class="pet_word">
+                        <span>寵物種類</span>
+                    </div>
+                    <input type="text" placeholder="請輸入寵物種類">
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <p>如有訂位以外的需求，歡迎來電與我們聯繫 <span>00 - 01234567</span> </p>
+        <!-- <button type="submit">確認</button> -->
+        <a href="reserve_ success.html">確認</a>
+
+    </div>
+
+
+    <!--------------------下方區域---------------------->
+    <div class="foot">
+
+        <div class="foot_top">
+            <img src="./images/LOGO_green.png" alt="under_Logo">
+            <ul>
+                <li>地址：104台北市中山區南京東路三段219號4F</li>
+                <li>連絡電話：00 - 01234567</li>
+            </ul>
+        </div>
+
+        <div class="foot_bottom">
+            <p>Copyright © 2025 WiEdu 個人專題發表使用</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

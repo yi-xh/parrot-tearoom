@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測試用</title>
+    <style>
+        .top {
+            position: relative;
+            background-color: green;
+            opacity: .5;
+            width: 130px;
+
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .top::after {
+            position: absolute;
+            content: '';
+            border-top: 3px solid red;
+            width: 100px;
+            left: 100%;
+            align-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <span>互動專區</span>
+        </div>
+    </div>
+
+    <label for="date">日期</label>
+    <input type="date" id="date">
+</body>
+
+</html>

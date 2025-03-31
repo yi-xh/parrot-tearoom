@@ -1,0 +1,249 @@
+@import url(reset.css);
+
+.nav {
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------- */
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.notice h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.notice p {
+    line-height: 1.4;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C6E19F;
+
+    margin-bottom: 20px;
+}
+
+/* -------------------表單基本格式設定-------------------- */
+.form>div {
+    margin-bottom: 20px;
+}
+
+/* 表單標題文字 */
+.form span {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* input[type="text"]格式 */
+.form input[type="text"] {
+    border: none;
+    background-color: unset;
+    height: 40px;
+    border-bottom: 1px solid #8EAE60;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #305004;
+}
+
+.form input[type="text"]:focus {
+    background-color: #fff;
+}
+
+.form input[type="text"]:focus-visible {
+    outline: 1px solid #8EAE60;
+}
+
+.form input[type="text"]::placeholder {
+    font-size: 16px;
+    color: #30500451;
+}
+
+/* select格式 */
+.form select {
+    border: none;
+    background-color: unset;
+    border-bottom: 1px solid #8EAE60;
+
+}
+
+.form select:focus {
+    background-color: #fff;
+}
+
+.form select:focus-visible {
+    outline: 1px solid #8EAE60;
+}
+
+/* input[type="date"]格式 */
+.form input[type="date"] {
+    border: none;
+    background-color: unset;
+    border-bottom: 1px solid #8EAE60;
+}
+
+.form input[type="date"]:focus {
+    background-color: #fff;
+}
+
+.form input[type="date"]:focus-visible {
+    outline: 1px solid #8EAE60;
+}
+
+/* -------------訂位人數與日期------------- */
+.guast_and_day {
+    display: flex;
+    gap: 50px;
+}
+
+
+.guest select {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    color: #487509;
+}
+
+
+.day input {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    color: #487509;
+}
+
+/* -------------選擇時段-------------- */
+.time_option_container {
+    display: flex;
+    gap: 20px;
+}
+
+.time_option {
+    font-size: 16px;
+    border: 1px solid #8EAE60;
+    background-color: #fff;
+    color: #487509;
+
+    padding: 7px 30px;
+
+}
+
+.time_option input[type="radio"] {
+    appearance: none;
+}
+
+.time_option:has(input[type="radio"]:checked) {
+    background-color: #8EAE60;
+    color: #fff;
+}
+
+/* -------------訂位者姓名-------------- */
+.name {}
+
+.name input {
+    width: 250px;
+}
+
+
+/* -------------手機與驗證碼-------------- */
+.phone_and_verify {
+    display: flex;
+    gap: 50px;
+}
+
+
+.phone input {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.phone a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    background-color: #8EAE60;
+    color: #fff;
+    width: 120px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+/* -------------攜帶寵物-------------- */
+.bring_pet {
+    display: flex;
+    gap: 50px;
+
+}
+
+.pet {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pet .option_container {
+    display: flex;
+    gap: 20px;
+}
+
+.pet label {
+    padding: 4px 6px;
+}
+
+.option_container span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #305004;
+}
+
+/* ---------------------- */
+.main>p {
+    margin-bottom: 20px;
+}
+
+/* .main>button {
+    display: block;
+    border: 0;
+    background-color: #8EAE60;
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    line-height: 50px;
+    font-weight: 600;
+
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+} */
+
+.main>a {
+    display: block;
+    border: 0;
+    background-color: #8EAE60;
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* ----------------HOVER--------------- */
+
+/* .main>button:hover {
+    background-color: #C6E19F;
+    color: #8EAE60;
+} */
+
+.main>a:hover {
+    background-color: #C6E19F;
+    color: #8EAE60;
+}
