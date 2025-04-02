@@ -111,6 +111,12 @@ body>a:hover {
 
 /* ---------------------820斷點------------------- */
 @media screen and (max-width: 821px) {
+    body>a {
+        writing-mode: vertical-rl;
+        width: 60px;
+        padding: 0;
+    }
+
     .nav ul {
         width: 400px;
     }
