@@ -1,19 +1,19 @@
 @import url(reset.css);
 
 /* ---------------------導覽列------------------------ */
-.nav {
+nav {
     margin-bottom: 30px;
 }
 
 /* --------------------------------------------- */
-.main {
+main {
     width: 1200px;
     margin: 0 auto;
 
     position: relative;
 }
 
-.main h2 {
+main h2 {
     background-color: #C6E19F;
     width: 100px;
     font-size: 24px;
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
 }
 
-.main h2::before {
+main h2::before {
     content: '';
     position: absolute;
     background-color: #C6E19F;
@@ -76,18 +76,18 @@
 }
 
 /* 所在位置 右邊內容 */
-.inplace {
+.place_word {
     margin-left: 50px;
 }
 
-.inplace p {
+.place_word p {
     font-size: 20px;
     width: 490px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.inplace a {
+.place_word a {
     display: block;
     background-color: #8EAE60;
     width: 200px;
@@ -102,7 +102,7 @@
 
 /* ---------------------HOVER------------------------ */
 
-.inplace a:hover {
+.place_word a:hover {
     background-color: #C6E19F;
     color: #8EAE60;
 }

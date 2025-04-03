@@ -6,7 +6,7 @@ body {
 }
 
 /* 側邊訂位按鈕 */
-body>a {
+aside a {
     position: fixed;
     right: 0;
     bottom: 60px;
@@ -23,6 +23,7 @@ body>a {
     padding-left: 25px;
     border: 1px solid #487509;
     border-radius: 50% 0 0 50%;
+
 }
 
 
@@ -36,25 +37,25 @@ body>a {
     align-items: center;
 }
 
-.nav img {
+nav img {
     margin-left: 20px;
     height: 45px;
 }
 
-.nav a {
+nav a {
     display: block;
 }
 
-.nav ul {
+nav ul {
     width: 550px;
     display: flex;
 }
 
-.nav li {
+nav li {
     flex-grow: 1;
 }
 
-.nav li a {
+nav li a {
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
@@ -67,11 +68,11 @@ body>a {
 
 
 /* ---------------------頁尾----------------------- */
-.foot {
+footer {
     background-color: #8EAE60;
 }
 
-.foot_top {
+.footer_top {
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -81,27 +82,31 @@ body>a {
 
 }
 
-.foot img {
+.footer_top li {
+    line-height: 1.6;
+}
+
+.footer_top img {
     height: 45px;
 }
 
 /*  */
-.foot_bottom {
+.footer_bottom {
     padding: 20px 0;
 }
 
-.foot p {
+.footer_bottom p {
     text-align: center;
 }
 
 /* ---------------------HOVER------------------------ */
 /* 導覽列 */
-.nav li a:hover {
+nav li a:hover {
     background-color: #C6E19F;
 }
 
 /* 側邊訂位按鈕 */
-body>a:hover {
+aside a:hover {
     background-color: #C6E19F;
     color: #8EAE60;
     border: none;
@@ -111,17 +116,18 @@ body>a:hover {
 
 /* ---------------------820斷點------------------- */
 @media screen and (max-width: 821px) {
-    body>a {
+    aside a {
         writing-mode: vertical-rl;
-        width: 60px;
-        padding: 0;
+        padding: 20px 10px;
+        line-height: 50px;
+        width: auto;
     }
 
-    .nav ul {
+    nav ul {
         width: 400px;
     }
 
-    .foot_top {
+    .footer_top {
         width: auto;
         margin: 0 10px;
     }
@@ -135,16 +141,16 @@ body>a:hover {
         height: 50px;
     }
 
-    .nav img {
+    nav img {
         height: 35px;
         margin-left: 10px;
     }
 
-    .nav ul {
+    nav ul {
         width: 350px;
     }
 
-    .nav li a {
+    nav li a {
         font-size: 16px;
         line-height: 50px;
     }

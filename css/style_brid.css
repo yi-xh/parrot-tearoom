@@ -1,16 +1,16 @@
 @import url(reset.css);
 
-.nav {
+nav {
     margin-bottom: 30px;
 }
 
 /* ---------------------內容------------------------ */
-.top {
+main {
     width: 1200px;
     margin: 0 auto;
 }
 
-.top h2 {
+main h2 {
     background-color: #C6E19F;
     width: 150px;
     font-size: 24px;
@@ -25,7 +25,7 @@
     margin-bottom: 50px;
 }
 
-.top h2::before {
+main h2::before {
     content: '';
     position: absolute;
     background-color: #C6E19F;
@@ -34,28 +34,28 @@
     right: 100%;
 }
 
-.top>p {
+main>p {
     font-size: 20px;
     margin-bottom: 50px;
 }
 
-/* -------------------------------------- */
-.main {
+/* -----------------鳥介紹----------------- */
+.brid_introduce {
     width: 1100px;
     margin: 0 auto;
 }
 
-.main ul {
+.brid_introduce ul {
     display: flex;
     flex-wrap: wrap;
     gap: 150px;
 }
 
-.main li {
+.brid_introduce li {
     position: relative;
 }
 
-.main img {
+.brid_introduce img {
     width: 450px;
     height: 400px;
     object-fit: cover;
@@ -65,13 +65,13 @@
 
 
 /* --------------------------------------------------- */
-.main li:nth-child(2n) {
+.brid_introduce li:nth-child(2n) {
     transform: translateY(-120px);
 }
 
 
 /* --------------------------------------------------- */
-/* 介紹小卡 */
+/* ---------------介紹小卡---------------- */
 .card {
     width: 200px;
     padding: 20px;
@@ -100,8 +100,10 @@
     line-height: 1.4;
 }
 
+
+
 /* 推footer */
-.foot {
+footer {
     margin-top: 100px;
 }
 

@@ -1,20 +1,20 @@
 @import url(reset.css);
 
-.nav {
+nav {
     margin-bottom: 30px;
 }
 
 /* --------------------------------------------- */
 
-.main {
+main {
     width: 1000px;
     margin: 0 auto;
 }
 
-.notice h2 {
+.notice span {
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .notice p {
@@ -199,11 +199,11 @@
 }
 
 /* ---------------------- */
-.main>p {
+main>p {
     margin-bottom: 20px;
 }
 
-/* .main>button {
+/* main>button {
     display: block;
     border: 0;
     background-color: #8EAE60;
@@ -218,7 +218,7 @@
     margin-bottom: 30px;
 } */
 
-.main>a {
+main>a {
     display: block;
     border: 0;
     background-color: #8EAE60;
@@ -237,12 +237,12 @@
 
 /* ----------------HOVER--------------- */
 
-/* .main>button:hover {
+/* main>button:hover {
     background-color: #C6E19F;
     color: #8EAE60;
 } */
 
-.main>a:hover {
+main>a:hover {
     background-color: #C6E19F;
     color: #8EAE60;
 }

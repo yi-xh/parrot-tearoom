@@ -1,7 +1,7 @@
 @import url(reset.css);
 
 /* ---------------------上方區域------------------------ */
-.top {
+header {
     background-image: url(../images/drink_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@
     margin-bottom: 30px;
 }
 
-.top h1 {
+header h1 {
     font-size: 48px;
     font-weight: 700;
     padding-top: 100px;
@@ -22,7 +22,7 @@
     margin-bottom: 90px;
 }
 
-.top p {
+header p {
     font-size: 20px;
     line-height: 1.4;
     font-weight: 600;

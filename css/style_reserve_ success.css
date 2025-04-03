@@ -1,28 +1,27 @@
 @import url(reset.css);
 
 /* --------------------------------------------- */
-.main {
+main {
     width: 1200px;
     margin: 0 auto;
 
     padding: 200px 0;
 }
 
-h1 {
+main span {
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
-.main p {
+main p {
     font-size: 24px;
     padding-bottom: 30px;
     border-bottom: 3px solid #C6E19F;
 
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
-.main a {
+main a {
     display: block;
     background-color: #8EAE60;
     width: 200px;
@@ -38,7 +37,7 @@ h1 {
 
 /* ---------------------HOVER------------------------ */
 
-.main a:hover {
+main a:hover {
     background-color: #C6E19F;
     color: #8EAE60;
 }
