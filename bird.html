@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_all.css">
-    <link rel="stylesheet" href="./css/style_brid.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室_店鳥介紹</title>
 </head>
@@ -13,60 +12,71 @@
 <body>
 
     <aside>
-        <a href="reserve.html">前往訂位</a>
+        <a href="reserve.html">
+            <i class="bi bi-calendar2-event"></i>
+            <span>前往訂位</span>
+        </a>
     </aside>
 
     <!--------------------導覽列---------------------->
-    <nav>
-        <div class="nav">
+    <header class="needMargin">
+        <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+            <div class="barTransition">
+                <div class="bar_btn barBtn1"></div>
+                <div class="bar_btn barBtn2"></div>
+                <div class="bar_btn barBtn3"></div>
+            </div>
             <ul>
                 <li><a href="menu.html">各式菜單</a></li>
                 <li><a href="bird.html">店鳥介紹</a></li>
                 <li><a href="information.html">店家資訊</a></li>
                 <li><a href="reserve.html">線上訂位</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-------------------------內容--------------------------->
     <main>
 
-        <h2>認識小店員們</h2>
-        <p>我們平時都會待在店裡，歡迎來找我們玩！</p>
+        <div class="bridIntroduce">
 
-        <div class="brid_introduce">
+            <div class="h2Title">
+                <h2>認識小店員們</h2>
+            </div>
+
+            <p>我們平時都會待在店裡，歡迎來找我們玩！</p>
 
             <ul>
                 <li>
                     <img src="./images/LB.jpg" alt="藍寶">
-                    <div class="card">
-                        <h3>藍寶</h3>
-                        <h4>和尚鸚鵡</h4>
+                    <div class="bridCard">
+                        <span class="bridName">藍寶</span>
+                        <span class="bridType">和尚鸚鵡</span>
                         <p>我只是臉比較臭，但是我很溫柔</p>
                     </div>
                 </li>
                 <li>
                     <img src="./images/KG.jpg" alt="凱哥">
-                    <div class="card">
-                        <h3>凱哥</h3>
-                        <h4>凱克鸚鵡</h4>
+                    <div class="bridCard">
+                        <span class="bridName">凱哥</span>
+                        <span class="bridType">凱克鸚鵡</span>
                         <p>我活潑好動，是大家的開心果，來找我玩吧</p>
                     </div>
                 </li>
                 <li>
                     <img src="./images/DM.jpg" alt="呆毛">
-                    <div class="card">
-                        <h3>呆毛</h3>
-                        <h4>玄鳳鸚鵡</h4>
+                    <div class="bridCard">
+                        <span class="bridName">呆毛</span>
+                        <span class="bridType">玄鳳鸚鵡</span>
                         <p>我喜歡唱歌，希望大家能喜歡我的歌聲</p>
                     </div>
                 </li>
                 <li>
                     <img src="./images/HG.jpg" alt="火鍋">
-                    <div class="card">
-                        <h3>火鍋</h3>
-                        <h4>非洲灰鸚鵡</h4>
+                    <div class="bridCard">
+                        <span class="bridName">火鍋</span>
+                        <span class="bridType">非洲灰鸚鵡</span>
                         <p>我很會模仿，歡迎大家來找我說話</p>
                     </div>
                 </li>
@@ -82,8 +92,12 @@
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
             <ul>
-                <li>地址：104台北市中山區南京東路三段219號4F</li>
-                <li>連絡電話：00 - 01234567</li>
+                <li>
+                    <a href="">地址：104台北市中山區南京東路三段219號4F</a>
+                </li>
+                <li>
+                    <a href="">連絡電話：00 - 01234567</a>
+                </li>
             </ul>
         </div>
 

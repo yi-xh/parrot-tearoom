@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_all.css">
-    <link rel="stylesheet" href="./css/style_menu.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室_菜單</title>
 </head>
@@ -13,32 +12,40 @@
 <body>
 
     <aside>
-        <a href="reserve.html">前往訂位</a>
+        <a href="reserve.html">
+            <i class="bi bi-calendar2-event"></i>
+            <span>前往訂位</span>
+        </a>
     </aside>
 
     <!--------------------導覽列---------------------->
-    <nav>
-        <div class="nav">
+    <header>
+        <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+            <div class="barTransition">
+                <div class="bar_btn barBtn1"></div>
+                <div class="bar_btn barBtn2"></div>
+                <div class="bar_btn barBtn3"></div>
+            </div>
             <ul>
                 <li><a href="menu.html">各式菜單</a></li>
                 <li><a href="bird.html">店鳥介紹</a></li>
                 <li><a href="information.html">店家資訊</a></li>
                 <li><a href="reserve.html">線上訂位</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!--------------------上方區域---------------------->
-    <header>
+    <div class="menuWrap">
         <h1>想吃什麼?</h1>
         <p>有時後坐下來靜靜地觀察鳥寶們<br>會發現鳥寶們不一樣的小舉動喔！</p>
-    </header>
+    </div>
 
     <!--------------------中間區域---------------------->
     <main>
 
-        <div class="manu">
+        <div class="menu">
 
             <div class="list">
                 <div class="list_option_container">
@@ -53,11 +60,15 @@
                         <input type="radio" name="list"><span>甜點</span>
                     </label>
                 </div>
-                <span>本店低消為每人一杯飲品</span>
+                <span>
+                    <i class="bi bi-star-fill"></i>
+                    本店低消為每人一杯飲品
+                </span>
             </div>
 
-            <div class="drink_list">
-                <ul>
+
+            <div class="mealsList drinkList">
+                <ul class="price">
                     <li>紅茶拿鐵<span>$&nbsp;100</span></li>
                     <li>抹茶拿鐵<span>$&nbsp;100</span></li>
                     <li>檸檬紅茶<span>$&nbsp;100</span></li>
@@ -65,8 +76,52 @@
                     <li>芒果冰茶<span>$&nbsp;100</span></li>
                     <li>黑咖啡<span>$&nbsp;100</span></li>
                 </ul>
-                <img src="./images/black_coffee.jpg" alt="黑咖啡">
+                <ul class="mealsImg drinkImg">
+                    <li><img src="./images/drink/latte.jpg" alt="紅茶拿鐵"></li>
+                    <!-- <li><img src="./images/drink/macha_latte.jpg" alt="抹茶拿鐵"></li> -->
+                    <!-- <li><img src="./images/drink/lamonTea.jpg" alt="檸檬紅茶"></li> -->
+                    <!-- <li><img src="./images/drink/passion_tea.jpg" alt="百香果冰茶"></li> -->
+                    <!-- <li><img src="./images/drink/mango_tea.jpg" alt="芒果冰茶"></li> -->
+                    <!-- <li><img src="./images/drink/black_coffee.jpg" alt="黑咖啡"></li> -->
+                </ul>
             </div>
+
+            <div class="mealsList stapleFoodList">
+                <ul class="price">
+                    <li>總匯三明治<span>$&nbsp;100</span></li>
+                    <li>炸物拼盤<span>$&nbsp;100</span></li>
+                    <li>肉醬千層麵<span>$&nbsp;100</span></li>
+                    <li>水波蛋吐司<span>$&nbsp;100</span></li>
+                    <li>鮮蔬煮<span>$&nbsp;100</span></li>
+                </ul>
+                <ul class="mealsImg stapleFoodImg">
+                    <li><img src="./images/stapleFood/clubSandwich.jpg" alt="總匯三明治"></li>
+                    <li><img src="./images/stapleFood/Fried food platter.jpg" alt="炸物拼盤"></li>
+                    <li><img src="./images/stapleFood/Lasagna.jpg" alt="肉醬千層麵"></li>
+                    <li><img src="./images/stapleFood/Poached Egg Toast.jpg" alt="水波蛋吐司"></li>
+                    <li><img src="./images/stapleFood/vegetable bowl.jpg" alt="鮮蔬煮"></li>
+                </ul>
+            </div>
+
+            <div class="mealsList dessertList">
+                <ul class="price">
+                    <li>紅茶拿鐵<span>$&nbsp;100</span></li>
+                    <li>抹茶拿鐵<span>$&nbsp;100</span></li>
+                    <li>檸檬紅茶<span>$&nbsp;100</span></li>
+                    <li>百香果冰茶<span>$&nbsp;100</span></li>
+                    <li>芒果冰茶<span>$&nbsp;100</span></li>
+                    <li>黑咖啡<span>$&nbsp;100</span></li>
+                </ul>
+                <ul class="mealsImg dessertImg">
+                    <li><img src="./images/dessert/Tiramisu.jpg" alt="提拉米蘇"></li>
+                    <li><img src="./images/dessert/machaCake.jpg" alt="抹茶蛋糕捲"></li>
+                    <li><img src="./images/dessert/eggtart.jpg" alt="香酥蛋塔"></li>
+                    <li><img src="./images/dessert/fruitcup.jpg" alt="綜合水果杯"></li>
+                    <li><img src="./images/dessert/puncakeice2.jpg" alt="冰淇淋鬆餅"></li>
+                    <li><img src="./images/dessert/panCake.jpg" alt="蜂蜜奶油鬆餅"></li>
+                </ul>
+            </div>
+
 
         </div>
 
@@ -78,8 +133,12 @@
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
             <ul>
-                <li>地址：104台北市中山區南京東路三段219號4F</li>
-                <li>連絡電話：00 - 01234567</li>
+                <li>
+                    <a href="">地址：104台北市中山區南京東路三段219號4F</a>
+                </li>
+                <li>
+                    <a href="">連絡電話：00 - 01234567</a>
+                </li>
             </ul>
         </div>
 

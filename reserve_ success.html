@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_all.css">
-    <link rel="stylesheet" href="./css/style_reserve_ success.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>預約成功</title>
 </head>
@@ -13,24 +12,32 @@
 <body>
 
     <!--------------------導覽列---------------------->
-    <nav>
-        <div class="nav">
+    <header>
+        <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+            <div class="barTransition">
+                <div class="bar_btn barBtn1"></div>
+                <div class="bar_btn barBtn2"></div>
+                <div class="bar_btn barBtn3"></div>
+            </div>
             <ul>
                 <li><a href="menu.html">各式菜單</a></li>
                 <li><a href="bird.html">店鳥介紹</a></li>
                 <li><a href="information.html">店家資訊</a></li>
                 <li><a href="reserve.html">線上訂位</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <!------------------------------------------>
-    <main>
+    <main class="formWight">
 
-        <span>預約成功！</span>
-        <p>感謝您的預定！訂位資訊已寄送簡訊至手機，歡迎您當天的來訪！</p>
-        <a href="index.html">返回首頁</a>
+        <div class="reserveSuccess">
+            <span>預約成功！</span>
+            <p>感謝您的預定！訂位資訊已寄送簡訊至手機，歡迎您當天的來訪！</p>
+            <a href="index.html">返回首頁</a>
+        </div>
 
     </main>
 
@@ -40,8 +47,12 @@
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
             <ul>
-                <li>地址：104台北市中山區南京東路三段219號4F</li>
-                <li>連絡電話：00 - 01234567</li>
+                <li>
+                    <a href="">地址：104台北市中山區南京東路三段219號4F</a>
+                </li>
+                <li>
+                    <a href="">連絡電話：00 - 01234567</a>
+                </li>
             </ul>
         </div>
 

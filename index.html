@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_all.css">
-    <link rel="stylesheet" href="./css/style_index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室</title>
 </head>
@@ -13,41 +12,60 @@
 <body>
 
     <aside>
-        <a href="reserve.html">前往訂位</a>
+        <a href="reserve.html">
+            <i class="bi bi-calendar2-event"></i>
+            <span>前往訂位</span>
+        </a>
     </aside>
 
     <!--------------------導覽列---------------------->
-    <nav>
-        <div class="nav">
+    <header>
+        <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+            <div class="barTransition">
+                <div class="bar_btn barBtn1"></div>
+                <div class="bar_btn barBtn2"></div>
+                <div class="bar_btn barBtn3"></div>
+            </div>
             <ul>
                 <li><a href="menu.html">各式菜單</a></li>
                 <li><a href="bird.html">店鳥介紹</a></li>
                 <li><a href="information.html">店家資訊</a></li>
                 <li><a href="reserve.html">線上訂位</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!--------------------上方區域---------------------->
-    <header>
-        <h1>歡迎光臨鸚鵡茶室</h1>
-        <p>與鸚鵡共享療癒下午茶，釋放掉生活上的壓力</p>
-    </header>
+    <div class="indexWrap">
+        <div class="indexWrapText">
+            <h1>歡迎來到鸚鵡茶室</h1>
+            <p>與鸚鵡共享療癒下午茶，釋放掉生活上的壓力</p>
+        </div>
+    </div>
+
 
     <!--------------------中間區域---------------------->
     <main>
         <!-- 店內空間 -->
-        <div class="main_top">
-            <h2>店內空間</h2>
-            <img class="space1" src="./images/space1.jpg" alt="店內空間1">
-            <img class="space2" src="./images/space2.jpg" alt="店內空間2">
+        <div class="storeSpace">
+            <div class="h2Title indexH2Title">
+                <h2>店內空間</h2>
+            </div>
+
+            <ul>
+                <li><img class="space1" src="./images/space1.jpg" alt="店內空間1"></li>
+                <li><img class="space2" src="./images/space2.jpg" alt="店內空間2"></li>
+            </ul>
             <span>提供乾淨寬敞的空間，放鬆一整天的心情</span>
         </div>
 
         <!-- 互動專區 -->
-        <div class="main_middle">
-            <h2>互動專區</h2>
+        <div class="bridTouch">
+            <div class="h2Title indexH2Title">
+                <h2>互動專區</h2>
+            </div>
+
             <ul>
                 <li><img src="./images/interactive_1.jpg" alt="互動1"></li>
                 <li><img src="./images/interactive_2.jpg" alt="互動2"></li>
@@ -55,21 +73,24 @@
                 <li><img src="./images/interactive_4.jpg" alt="互動4"></li>
                 <li><img src="./images/interactive_5.jpg" alt="互動5"></li>
             </ul>
-            <p>有店員從旁協助與鸚鵡們親近，如何與鳥寶們相處才會讓牠們感到舒適！</p>
+            <span>有店員從旁協助與鸚鵡們親近，如何與鳥寶們相處才會讓牠們感到舒適！</span>
         </div>
 
         <!-- 各式餐點 -->
-        <div class="main_bottom">
-            <h2>各式餐點</h2>
+        <div class="meals">
+            <div class="h2Title indexH2Title">
+                <h2>各式餐點</h2>
+            </div>
+
             <ul>
                 <li>
-                    <a href="menu.html"><img src="./images/lamonTea.jpg" alt="飲品"><span>飲品</span></a>
+                    <a href="menu.html"><img src="./images/drink/lamonTea.jpg" alt="飲品"><span>飲品</span></a>
                 </li>
                 <li>
-                    <a href="menu.html"><img src="./images/clubSandwich.jpg" alt="主食"><span>主食</span></a>
+                    <a href="menu.html"><img src="./images/stapleFood/clubSandwich.jpg" alt="主食"><span>主食</span></a>
                 </li>
                 <li>
-                    <a href="menu.html"><img src="./images/machaCake.jpg" alt="甜點"><span>甜點</span></a>
+                    <a href="menu.html"><img src="./images/dessert/machaCake.jpg" alt="甜點"><span>甜點</span></a>
                 </li>
             </ul>
         </div>
@@ -82,8 +103,12 @@
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
             <ul>
-                <li>地址：104台北市中山區南京東路三段219號4F</li>
-                <li>連絡電話：00 - 01234567</li>
+                <li>
+                    <a href="">地址：104台北市中山區南京東路三段219號4F</a>
+                </li>
+                <li>
+                    <a href="">連絡電話：00 - 01234567</a>
+                </li>
             </ul>
         </div>
 

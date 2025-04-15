@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_all.css">
-    <link rel="stylesheet" href="./css/style_reserve.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室_預約</title>
 </head>
@@ -13,20 +12,25 @@
 <body>
 
     <!--------------------導覽列---------------------->
-    <nav>
-        <div class="nav">
+    <header class="needMargin">
+        <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
+            <div class="barTransition">
+                <div class="bar_btn barBtn1"></div>
+                <div class="bar_btn barBtn2"></div>
+                <div class="bar_btn barBtn3"></div>
+            </div>
             <ul>
                 <li><a href="menu.html">各式菜單</a></li>
                 <li><a href="bird.html">店鳥介紹</a></li>
                 <li><a href="information.html">店家資訊</a></li>
                 <li><a href="reserve.html">線上訂位</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!------------------------------------------>
-    <main>
+    <main class="formWight">
 
         <div class="notice">
             <span>訂位須知</span>
@@ -148,8 +152,7 @@
 
         </div>
 
-
-        <p>如有訂位以外的需求，歡迎來電與我們聯繫 <span>00 - 01234567</span> </p>
+        <p class="noticeUnder">如有訂位以外的需求，歡迎來電與我們聯繫 <span>00 - 01234567</span> </p>
         <!-- <button type="submit">確認</button> -->
         <a href="reserve_ success.html">確認</a>
 
@@ -162,8 +165,12 @@
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
             <ul>
-                <li>地址：104台北市中山區南京東路三段219號4F</li>
-                <li>連絡電話：00 - 01234567</li>
+                <li>
+                    <a href="">地址：104台北市中山區南京東路三段219號4F</a>
+                </li>
+                <li>
+                    <a href="">連絡電話：00 - 01234567</a>
+                </li>
             </ul>
         </div>
 

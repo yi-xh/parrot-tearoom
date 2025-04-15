@@ -1,0 +1,191 @@
+body {
+    background-color: #F7FEED;
+    color: #487509;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+/* ------------------------側邊訂位按鈕-------------------------- */
+aside a {
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    z-index: 99;
+
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background-color: #8EAE60;
+    color: #fff;
+    border: 1px solid #487509;
+    text-align: center;
+
+    writing-mode: vertical-rl;
+    padding: 30px 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+aside .bi {
+    vertical-align: 5px;
+}
+
+aside a:hover {
+    background-color: #C6E19F;
+    color: #487509;
+}
+
+/* ------------------------Nav-------------------------- */
+.bar {
+    background-color: #8EAE60;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar li {
+    background-color: #8EAE60;
+}
+
+/* --------漢堡線--------- */
+.barTransition {
+    display: none;
+    margin-right: 20px;
+}
+
+.bar_btn {
+    width: 30px;
+    height: 4px;
+    background-color: #305004;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* ------------------------ */
+
+nav>a {
+    margin-left: 20px;
+}
+
+nav img {
+    max-height: 45px;
+}
+
+nav ul {
+    display: flex;
+    width: 550px;
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #305004;
+}
+
+nav li a:hover {
+    background-color: #C6E19F;
+}
+
+/* ----herder下沒有wrapper需推30px---- */
+.needMargin {
+    margin-bottom: 30px;
+}
+
+/* ----表單相關頁面寬度要縮至1000px---- */
+.formWight {
+    max-width: 1000px;
+}
+
+
+/* ------------------------Main-------------------------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ----內容H2標題樣式---- */
+main h2 {
+    background-color: #C6E19F;
+
+    line-height: 40px;
+    padding: 0 20px 0 0;
+}
+
+.h2Title {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    /* 讓首頁以外的h2不被撐開 */
+
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.h2Title::before {
+    content: '';
+    background-color: #C6E19F;
+    width: 150px;
+    height: 40px;
+
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+
+/* ----內容圖片樣式---- */
+main img {
+    border: 3px solid #8EAE60;
+    border-radius: 20px;
+}
+
+/* ------------------------Footer-------------------------- */
+footer {
+    background-color: #8EAE60;
+}
+
+.footer_top {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #487509;
+}
+
+.footer_top img {
+    height: 45px;
+}
+
+.footer_top a {
+    display: block;
+    text-decoration: none;
+    color: #487509;
+    line-height: 1.6;
+}
+
+.footer_bottom {
+    padding: 20px 0;
+}
+
+.footer_bottom p {
+    font-size: 14px;
+    text-align: center;
+}
