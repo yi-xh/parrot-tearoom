@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -22,17 +23,21 @@
     <header>
         <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
-            <div class="barTransition">
-                <div class="bar_btn barBtn1"></div>
-                <div class="bar_btn barBtn2"></div>
-                <div class="bar_btn barBtn3"></div>
+
+            <div class="bar_container">
+                <div class="barTransition">
+                    <div class="bar_btn barBtn1"></div>
+                    <div class="bar_btn barBtn2"></div>
+                    <div class="bar_btn barBtn3"></div>
+                </div>
+                <ul>
+                    <li><a href="menu.html">各式菜單</a></li>
+                    <li><a href="bird.html">店鳥介紹</a></li>
+                    <li><a href="information.html">店家資訊</a></li>
+                    <li><a href="reserve.html">線上訂位</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="menu.html">各式菜單</a></li>
-                <li><a href="bird.html">店鳥介紹</a></li>
-                <li><a href="information.html">店家資訊</a></li>
-                <li><a href="reserve.html">線上訂位</a></li>
-            </ul>
+
         </nav>
     </header>
 
@@ -47,52 +52,80 @@
 
     <!--------------------中間區域---------------------->
     <main>
-        <!-- 店內空間 -->
-        <div class="storeSpace">
-            <div class="h2Title indexH2Title">
-                <h2>店內空間</h2>
-            </div>
+        <div class="indexAboutUs">
 
-            <ul>
-                <li><img class="space1" src="./images/space1.jpg" alt="店內空間1"></li>
-                <li><img class="space2" src="./images/space2.jpg" alt="店內空間2"></li>
-            </ul>
-            <span>提供乾淨寬敞的空間，放鬆一整天的心情</span>
+            <div class="indexH2Title">
+                <h2>關於我們</h2>
+            </div>
+            <img class="aboutUsBg1" src="./images/parrot_bgsm.png" alt="1">
+            <p>
+                致力於推廣鸚鵡們的可愛，與此同時也能讓大家認識牠們的習性以及需要飼養的注意事項。<br>
+                會有店員帶領客人跟鸚鵡零距離互動,如何摸才會讓鳥寶們感到放鬆, 也有機會能夠餵食牠們。
+            </p>
+            <img class="aboutUsBg2" src="./images/parrot_bgsm_revers.png" alt="2">
         </div>
 
-        <!-- 互動專區 -->
-        <div class="bridTouch">
-            <div class="h2Title indexH2Title">
-                <h2>互動專區</h2>
+        <div class="birdTouch">
+            <div class="birdTouchCard">
+                <span>與鳥互動</span>
+                <p>有店員從旁協助與鸚鵡們親近，如何與鳥寶們相處才會讓牠們感到舒適！</p>
             </div>
 
-            <ul>
-                <li><img src="./images/interactive_1.jpg" alt="互動1"></li>
-                <li><img src="./images/interactive_2.jpg" alt="互動2"></li>
-                <li><img src="./images/interactive_3.jpg" alt="互動3"></li>
-                <li><img src="./images/interactive_4.jpg" alt="互動4"></li>
-                <li><img src="./images/interactive_5.jpg" alt="互動5"></li>
-            </ul>
-            <span>有店員從旁協助與鸚鵡們親近，如何與鳥寶們相處才會讓牠們感到舒適！</span>
+            <div class="birdTouchImg">
+                <div class="swiper birdSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/interactive_1.jpg" alt="互動1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/interactive_2.jpg" alt="互動2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/interactive_3.jpg" alt="互動3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/interactive_4.jpg" alt="互動4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/interactive_5.jpg" alt="互動5">
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"><i class="bi bi-caret-left-fill"></i></div>
+                    <div class="swiper-button-next"><i class="bi bi-caret-right-fill"></i></div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- 各式餐點 -->
+
         <div class="meals">
-            <div class="h2Title indexH2Title">
-                <h2>各式餐點</h2>
+            <div class="indexH2Title">
+                <h2>餐點種類</h2>
             </div>
 
             <ul>
-                <li>
-                    <a href="menu.html"><img src="./images/drink/lamonTea.jpg" alt="飲品"><span>飲品</span></a>
-                </li>
-                <li>
-                    <a href="menu.html"><img src="./images/stapleFood/clubSandwich.jpg" alt="主食"><span>主食</span></a>
-                </li>
-                <li>
-                    <a href="menu.html"><img src="./images/dessert/machaCake.jpg" alt="甜點"><span>甜點</span></a>
-                </li>
+                <li><img src="./images/drink/lamonTea_type.jpg" alt="飲品"><span>飲品</span></li>
+                <li><img src="./images/stapleFood/clubSandwich_type.jpg" alt="主食"><span>主食</span></li>
+                <li><img src="./images/dessert/machaCake_type.jpg" alt="甜點"><span>甜點</span></li>
             </ul>
+            <a href="menu.html">看菜單<i class="bi bi-chevron-compact-right"></i></a>
+        </div>
+
+        <!-- 空間 -->
+        <div class="storeSpace"></div>
+
+        <div class="indexH2Title">
+            <h2>所在位置</h2>
+        </div>
+
+        <!-- 地點 -->
+        <div class="indexPlaceHere">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3614.467838876253!2d121.53848916292192!3d25.052127694574605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z57ev6IKyIOWPsOWMlw!5e0!3m2!1szh-TW!2stw!4v1743043479218!5m2!1szh-TW!2stw"
+                width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>點擊右邊前往訂位，和鸚鵡們一同享受下午的美好時光！</p>
         </div>
 
     </main>
@@ -117,6 +150,8 @@
         </div>
 
     </footer>
+    <script src="./js/pt.js"></script>
+    <script src="./js/swiper.js"></script>
 
 </body>
 

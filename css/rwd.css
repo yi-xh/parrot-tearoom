@@ -41,7 +41,6 @@
 
 }
 
-
 /* -------------------------- 1000 ------------------------ */
 @media screen and (max-width: 1000px) {
 
@@ -166,28 +165,51 @@
         font-size: 20px;
     }
 
+
     /* ------------------ Index -------------------- */
-    .storeSpace .space1 {
-        width: 500px;
-        height: 350px;
+    .indexWrap {
+        margin-bottom: 50px
     }
 
-    .storeSpace .space2 {
-        width: 350px;
-        height: 300px;
+    .indexH2Title h2 {
+        font-size: 30px;
     }
 
-    .storeSpace span {
+    .birdTouchCard {
+        height: 400px;
+    }
+
+    .birdTouchCard span {
+        font-size: 30px;
+    }
+
+    .birdTouchCard p {
         font-size: 16px;
     }
 
-    .bridTouch li {
-        width: 300px;
-        height: 250px;
+    .birdTouchImg {
+        height: 400px;
     }
 
-    .bridTouch span {
-        font-size: 16px;
+
+    .swiper-button-prev {
+        transform: translate(10px, 100px);
+    }
+
+    .swiper-button-next {
+        transform: translate(-10px, 100px);
+    }
+
+    .meals {
+        margin-bottom: 80px;
+    }
+
+    .meals ul {
+        margin: 30px;
+    }
+
+    .meals a {
+        font-size: 20px;
     }
 
     /* ------------------ Menu -------------------- */
@@ -284,24 +306,66 @@
     }
 
     /* ------------------ Index -------------------- */
-    .storeSpace .space1 {
-        width: 350px;
-        height: 250px;
+    .indexH2Title h2 {
+        font-size: 28px;
     }
 
-    .storeSpace .space2 {
-        width: 300px;
+    .indexAboutUs p {
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .aboutUsBg1,
+    .aboutUsBg2 {
+        display: none;
+    }
+
+    .birdTouch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .birdTouchCard {
+        width: 100%;
         height: 200px;
+    }
+
+    .birdTouchCard span {
+        font-size: 28px;
+        padding: 50px 0 20px 50px;
+    }
+
+    .birdTouchImg {
+        width: 100%;
+    }
+
+    .storeSpace {
+        height: 250px;
     }
 
     .meals ul {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .meals li {
         width: 100%;
-        height: 350px;
+    }
+
+    .indexPlaceHere {
+        flex-direction: column;
+    }
+
+    .indexPlaceHere iframe {
+        width: auto;
+    }
+
+    .indexPlaceHere p {
+        width: auto;
+        font-size: 16px;
+        margin-top: 50px;
     }
 
     /* ------------------ Menu -------------------- */
@@ -319,13 +383,13 @@
         flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
+
+        padding: 50px 0 80px 0;
     }
 
     .price {
         width: 100%;
     }
-
-    .price li {}
 
     /* ------------------- Footer -------------------- */
     .footer_top {
@@ -374,16 +438,6 @@
         font-size: 12px;
     }
 
-    .storeSpace .space1 {
-        width: 280px;
-        height: 200px;
-    }
-
-    .storeSpace .space2 {
-        width: 225px;
-        height: 180px;
-    }
-
     .storeSpace span {
         font-size: 12px;
     }
@@ -400,7 +454,7 @@
     .menuWrap h1 {
         font-size: 20px;
         padding-top: 50px;
-        padding-left: 100px;
+        padding-left: 70px;
     }
 
     .menuWrap p {

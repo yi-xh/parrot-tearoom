@@ -126,11 +126,11 @@ main h2 {
 
     line-height: 40px;
     padding: 0 20px 0 0;
+    font-weight: 600;
 }
 
 .h2Title {
     font-size: 24px;
-    font-weight: 600;
     display: flex;
     /* 讓首頁以外的h2不被撐開 */
 

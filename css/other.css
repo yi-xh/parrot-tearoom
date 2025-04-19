@@ -7,13 +7,13 @@
     background-size: cover;
     margin: 0 auto;
 
-    margin-bottom: 30px
+    margin-bottom: 80px
 }
 
 .indexWrapText {
     color: #305004;
-    padding-top: 15%;
-    padding-left: 20%;
+    padding-top: 18%;
+    padding-left: 16%;
 
 }
 
@@ -26,145 +26,158 @@
 .indexWrap p {
     font-size: 24px;
     font-weight: 600;
-
 }
 
-/* ----首頁h2內容標題特殊樣式---- */
+/* -------------------------------------------------- */
+.indexH2Title h2 {
+    font-size: 36px;
+    background-color: #F7FEED;
+    padding: 0 25px;
+}
+
 .indexH2Title {
     display: flex;
     align-items: center;
+
+    margin-bottom: 50px;
+
 }
 
-.indexH2Title::after {
+.indexH2Title::after,
+.indexH2Title::before {
     content: '';
     height: 2px;
-    /* background-color: #C6E19F; */
-    background: linear-gradient(90deg, #C6E19F 90%, #c5e19f00);
     flex-grow: 1;
 }
 
-/* ------------店內空間------------ */
-.storeSpace {
-    margin-bottom: 30px;
-
+.indexH2Title::before {
+    background: linear-gradient(270deg, #C6E19F 85%, #c5e19f00);
 }
 
-.storeSpace ul {
-    position: relative;
-
-    margin-bottom: 20px;
+.indexH2Title::after {
+    background: linear-gradient(90deg, #C6E19F 85%, #c5e19f00);
 }
 
-.storeSpace .space1 {
-    width: 700px;
-    height: 450px;
-    object-fit: cover;
-
-    position: relative;
-    z-index: 1;
-}
-
-.storeSpace .space2 {
-    width: 550px;
-    height: 400px;
-
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.storeSpace span {
-    display: block;
-    font-size: 20px;
+.indexAboutUs p {
     text-align: center;
+    padding: 0 80px;
 }
 
-/* ------------互動專區------------ */
-.bridTouch {
-    margin-bottom: 30px;
+.aboutUsBg1 {
+    border: 0;
+    opacity: .3;
 }
 
-.bridTouch ul {
+.aboutUsBg2 {
+    border: 0;
+    opacity: .3;
+    float: right;
+    margin-bottom: 50px;
+}
+
+
+/* ------------與鳥互動------------ */
+.birdTouch {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-
-    position: relative;
-}
-
-.bridTouch li {
-    flex-shrink: 0;
-    width: 400px;
-    height: 350px;
-
-    position: absolute;
-}
-
-.bridTouch img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-bottom: 50px;
+    justify-content: center;
+
 }
 
-/* ------------------------------------ */
-.bridTouch li:nth-child(1) {
-    z-index: 3;
-    transform: scale(90%);
-    left: 0;
+.birdTouchCard {
+    width: 500px;
+    height: 500px;
+    background-color: #C6E19F;
+    border-radius: 20px;
 }
 
-.bridTouch li:nth-child(2) {
-    z-index: 4;
-    transform: scale(95%);
-    left: 10%;
-}
-
-.bridTouch li:nth-child(3) {
-    z-index: 5;
-    position: static;
-}
-
-.bridTouch li:nth-child(4) {
-    z-index: 4;
-    transform: scale(95%);
-    right: 10%;
-}
-
-.bridTouch li:nth-child(5) {
-    z-index: 3;
-    transform: scale(90%);
-    right: 0;
-}
-
-/* ------------------------------------ */
-
-.bridTouch span {
+.birdTouchCard span {
     display: block;
-    font-size: 20px;
-    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 200px 0 50px 50px;
 }
 
-/* ------------各式餐點------------ */
+.birdTouchCard p {
+    padding: 0 50px;
+}
+
+.birdTouchImg {
+    border: 3px solid #8EAE60;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    border: none;
+    border-radius: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev:hover .bi,
+.swiper-button-next:hover .bi {
+    transition: 0.5s;
+    background-color: #8EAE60;
+    color: #F7FEED;
+}
+
+.swiper-button-prev {
+    transform: translate(10px, 200px);
+}
+
+.swiper-button-next {
+    transform: translate(-10px, 200px);
+}
+
+.birdTouchImg .bi {
+    font-size: 50px;
+    color: #8EAE60;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+}
+
+/* ------------餐點種類------------ */
 .meals {
-    margin-bottom: 30px;
+    margin-bottom: 120px;
 }
 
 .meals ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    margin-bottom: 50px;
 }
 
 .meals li {
     position: relative;
     width: 350px;
-    height: 380px;
 }
 
 .meals a {
+    display: inline-block;
     text-decoration: none;
+    font-size: 24px;
+    color: #487509;
+
+    float: right;
+}
+
+.meals i {
+    background-color: #C6E19F;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .meals img {
@@ -185,6 +198,31 @@
     text-align: center;
     background-color: #8EAE60;
     color: #fff;
+}
+
+/* ------------空間------------ */
+
+.storeSpace {
+    background-image: url(../images/space2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+
+    clear: both;
+    margin-bottom: 50px;
+}
+
+/* ------------地點------------ */
+.indexPlaceHere {
+    display: flex;
+
+    margin-bottom: 50px;
+}
+
+.indexPlaceHere p {
+    margin: auto 50px;
+    width: 300px;
 }
 
 /* ------------------各式菜單------------------ */
@@ -232,6 +270,8 @@
 .list_option {
     font-size: 24px;
     padding: 10px 20px;
+    border: none;
+    background-color: none;
     border-left: 2px solid #C6E19F;
 }
 
@@ -287,9 +327,9 @@
 }
 
 /* ----飲品---- */
-.stapleFoodList {
-    /* display: none; */
-}
+/* .stapleFoodList {
+    display: none;
+} */
 
 /* ----主食---- */
 .stapleFoodList {
