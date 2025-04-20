@@ -12,7 +12,7 @@
 <body>
 
     <aside>
-        <a href="reserve.html">
+        <a href="reserve.html" id="asideButton">
             <i class="bi bi-calendar2-event"></i>
             <span>前往訂位</span>
         </a>
@@ -22,17 +22,22 @@
     <header class="needMargin">
         <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
-            <div class="barTransition">
-                <div class="bar_btn barBtn1"></div>
-                <div class="bar_btn barBtn2"></div>
-                <div class="bar_btn barBtn3"></div>
-            </div>
-            <ul>
-                <li><a href="menu.html">各式菜單</a></li>
-                <li><a href="bird.html">店鳥介紹</a></li>
-                <li><a href="information.html">店家資訊</a></li>
-                <li><a href="reserve.html">線上訂位</a></li>
-            </ul>
+
+            <label class="bar_container">
+                <input type="checkbox">
+                <div class="barBurgerLine">
+                    <div class="bar_btn barBtn1"></div>
+                    <div class="bar_btn barBtn2"></div>
+                    <div class="bar_btn barBtn3"></div>
+                </div>
+                <ul>
+                    <li><a href="menu.html">各式菜單</a></li>
+                    <li><a href="bird.html">店鳥介紹</a></li>
+                    <li><a href="information.html">店家資訊</a></li>
+                    <li><a href="reserve.html">線上訂位</a></li>
+                </ul>
+            </label>
+
         </nav>
     </header>
 
@@ -87,7 +92,7 @@
     </main>
 
     <!--------------------下方區域---------------------->
-    <footer>
+    <footer id="footer">
 
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
@@ -106,6 +111,9 @@
         </div>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="./js/pt.js"></script>
 
 </body>
 

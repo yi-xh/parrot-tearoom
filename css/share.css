@@ -10,6 +10,8 @@ p {
 }
 
 /* ------------------------側邊訂位按鈕-------------------------- */
+
+
 aside a {
     position: fixed;
     right: 0;
@@ -29,6 +31,8 @@ aside a {
     writing-mode: vertical-rl;
     padding: 30px 30px;
     border-radius: 20px 0 0 20px;
+
+    transition: bottom 0.3s ease;
 }
 
 aside .bi {
@@ -51,14 +55,11 @@ aside a:hover {
     align-items: center;
 }
 
-.bar li {
-    background-color: #8EAE60;
-}
-
 /* --------漢堡線--------- */
-.barTransition {
+.barBurgerLine {
     display: none;
     margin-right: 20px;
+    transition: 1s;
 }
 
 .bar_btn {
@@ -71,24 +72,24 @@ aside a:hover {
 
 /* ------------------------ */
 
-nav>a {
+.bar>a {
     margin-left: 20px;
 }
 
-nav img {
+.bar img {
     max-height: 45px;
 }
 
-nav ul {
+.bar ul {
     display: flex;
     width: 550px;
 }
 
-nav li {
+.bar li {
     flex-grow: 1;
 }
 
-nav li a {
+.bar li a {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -98,9 +99,14 @@ nav li a {
     color: #305004;
 }
 
-nav li a:hover {
+.bar li a:hover {
     background-color: #C6E19F;
 }
+
+.bar_container input {
+    display: none;
+}
+
 
 /* ----herder下沒有wrapper需推30px---- */
 .needMargin {
@@ -118,6 +124,8 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
+    position: relative;
 }
 
 /* ----內容H2標題樣式---- */

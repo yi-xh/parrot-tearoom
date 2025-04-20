@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.png">
     <title>鸚鵡茶室</title>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
 
     <aside>
-        <a href="reserve.html">
+        <a href="reserve.html" id="asideButton">
             <i class="bi bi-calendar2-event"></i>
             <span>前往訂位</span>
         </a>
@@ -24,8 +24,9 @@
         <nav class="bar">
             <a href="index.html"><img src="./images/LOGO_black.png" alt="Logo"></a>
 
-            <div class="bar_container">
-                <div class="barTransition">
+            <label class="bar_container">
+                <input type="checkbox">
+                <div class="barBurgerLine">
                     <div class="bar_btn barBtn1"></div>
                     <div class="bar_btn barBtn2"></div>
                     <div class="bar_btn barBtn3"></div>
@@ -36,7 +37,7 @@
                     <li><a href="information.html">店家資訊</a></li>
                     <li><a href="reserve.html">線上訂位</a></li>
                 </ul>
-            </div>
+            </label>
 
         </nav>
     </header>
@@ -90,9 +91,6 @@
                             <img src="./images/interactive_5.jpg" alt="互動5">
                         </div>
                     </div>
-
-                    <div class="swiper-button-prev"><i class="bi bi-caret-left-fill"></i></div>
-                    <div class="swiper-button-next"><i class="bi bi-caret-right-fill"></i></div>
                 </div>
             </div>
 
@@ -131,7 +129,7 @@
     </main>
 
     <!--------------------下方區域---------------------->
-    <footer>
+    <footer id="footer">
 
         <div class="footer_top">
             <img src="./images/LOGO_green.png" alt="under_Logo">
@@ -150,6 +148,9 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="./js/pt.js"></script>
     <script src="./js/swiper.js"></script>
 
