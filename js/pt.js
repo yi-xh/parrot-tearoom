@@ -38,7 +38,26 @@ listOptions.forEach((radio) => {
     });
 });
 
+document.querySelectorAll(".mealsList > .price > li").forEach(function (li) {
+    li.addEventListener('click', function () {
+        let imgUrl = this.getAttribute('data-img');
 
+        let mealsList = this.closest('.mealsList');
+
+        let img = mealsList.querySelector('img');
+        if (img) {
+            img.setAttribute('src', imgUrl);
+        }
+
+        mealsList.querySelectorAll('li').forEach(function (item) {
+            item.classList.remove('active');
+        });
+
+        this.classList.add('active');
+    });
+});
+
+/*
 $(".mealsList > .price > li").on('click', function () {
     let imgUrl = $(this).data('img')
     $(this).closest('.mealsList').find('img').attr('src', imgUrl);
@@ -47,3 +66,4 @@ $(".mealsList > .price > li").on('click', function () {
     })
     $(this).addClass('active')
 })
+*/

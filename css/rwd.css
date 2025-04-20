@@ -149,12 +149,9 @@
     }
 
     .bar ul {
-        display: none;
-    }
-
-    .bar_container:has(input:checked) ul {
-        display: block;
+        display: flex;
         flex-direction: column;
+
         position: absolute;
         z-index: 99;
         top: 0;
@@ -164,6 +161,16 @@
         background-color: #8EAE60;
         outline: 1px solid #305004;
 
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    .bar_container:has(input:checked) ul {
+        max-height: 500px;
+        /* 大於實際內容高度就行 */
+        opacity: 1;
     }
 
     .bar_btn {
@@ -327,6 +334,11 @@
         display: none;
     }
 
+    /* ------------------ Nav -------------------- */
+    .bar ul {
+        width: 100%;
+    }
+
     /* ------------------ Index -------------------- */
     .indexH2Title h2 {
         font-size: 28px;
@@ -406,7 +418,12 @@
         align-items: center;
         gap: 20px;
 
-        padding: 50px 0 80px 0;
+        padding: 30px 0 80px 0;
+    }
+
+    .mealsList img {
+        width: 100%;
+        aspect-ratio: 1;
     }
 
     .price {
